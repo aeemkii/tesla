@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Lato, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    /*flex-wrap: wrap;*/
+}
+.col-6{
+    width: 50%;
+    padding: 0 15px;
+}
+.col-4{
+    width: 33.3%;
+    padding: 0 15px;
+}
+.col-3{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.img-header{
+    width: 10%;
+    margin-left: 20px;
+}
+.header-block{
+    margin: 40px 80px;
+}
+.header-item{
+    margin-left: 282px;
+}
+.header-menu{
+    margin-top: 33px;
+    margin-left: 65px;
+}
+.header-text {
+    text-align: center;
+    background-color: #00486D;
+    color: #99B6C5;
+    padding: 8px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+}
+.header-link{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 35px;
+    color: #00486D;
+    margin: 0 6px;
+}
+.img-ilon{
+    position: absolute;
+    top: 33px;
+    left: 121px;
+    width: 62%;
+}
+.subscribe {
+    margin: 131px 0 139px;
+}
+.title-sub {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin-left: -78px;
+    text-align: center;
+    color: #0086c1;
+}
+.text-sub {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    margin-left: -75px;
+    text-align: center;
+    margin-top:9px;
+    color: #0086c1;
+}
+.contact-first {
+    width: 153px;
+    height: 39px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 0;
+    outline: none;
+    margin-left: 537px;
+    margin-right: 60px;
+    margin-top: 26px;
+}
+.contact-last {
+    width: 153px;
+    height: 39px;
+    border: 1px solid #000000;
+    border-radius: 0;
+    outline: none;
+    margin-top: 26px;
+    text-align: center;
+}
+.email {
+    width: 366px;
+    height: 39px;
+    margin-left: 538px;
+    border: 1px solid #000000;
+    border-radius: 0;
+    outline: none;
+    margin-top: 18px;
+    text-align: center;
+}
+.button-sub {
+    background-color: #0086c1;;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    border: 1px none #000000;
+    border-radius: 100px;
+    width: 115px;
+    height: 33px;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-left: 667px;
+    text-align: center;
+}
+.button-sub:hover {
+    transition: 0.6s;
+    background-color: gray;
+    border:1px solid gray;
+}
+/*Sub*/
+.img-slider{
+    position: relative;
+    padding-top: 100px;
+}
+.text-slider{
+    position: absolute;
+    padding-bottom:20px ;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+
+
+.open-popup{
+    color: #99B6C5;
+    margin: 32px 356px;
+    padding: 10px 35px;
+    font-size: 17px;
+    background-color: #00486D;
+    border: none;
+}
+
+.popup_bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+}
+
+.popup_bg.active{
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    transition: 0.5s all;
+}
+
+.popup.active{
+    transform: translate(-50%,-50%) scale(1);
+    transition: 0.5s all;
+}
+
+/*Конец важной части */
+/* Далее код для стилизации формы */
+.close-popup{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.popup label{
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.popup .label-text{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cfd0d3;
+    margin-bottom: 5px;
+}
+
+.popup input{
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #cfd0d3;
+    outline: none;
+}
+
+.popup input:focus{
+    border-bottom: 1px solid #2982ff;
+}
+
+.popup input:focus + .label-text{
+    color: #2982ff;
+}
+
+.popup textarea{
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.popup textarea:focus{
+    border-bottom: 1px solid #2982ff;
+}
+
+.popup button{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all;
+    background: #B08EAD;
+    border: none;
+
+}
+
+.popup button:hover{
+    background: #fff;
+    color: #B08EAD;
+    transition: 0.5s all;
+    border: 1px solid #CEB3CB;
+}
+
+.ilon-title {
+    height: 135px;
+
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 67px;
+
+    color: #00486D;
+}
+
+.ilon-text {
+    height: 168px;
+    width: 563px;
+
+    color: #00486D;
+
+}
+
+
+
+.ilon-link {
+    font-size: 14px;
+    color: #ED4C5C;
+    text-transform: capitalize;
+}
+
+.ilon-item-2 {
+    position: relative;
+    height: 552px;
+    width: 595px;
+    background: #00486D;
+
+
+
+
+}
+
+.ilon-play {
+    width: 66px;
+    height: 66px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.footer {
+    padding: 85px 0 86px;
+    background: #FAFAFA;
+
+}
+
+.footer-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 28px;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-text {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.footer-email, .footer-tel {
+    color: black;
+    text-transform: lowercase;
+}
+
+.footer-icons {
+    list-style: none;
+    display: flex;
+    column-gap: 23px;
+}
+.h2-slider{
+    font-size: 75px;
+    text-align: center;
+    color: #00486D;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
