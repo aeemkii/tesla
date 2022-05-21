@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c34c8a77-9540-4f25-af49-f4340ce680d2" name="Default Changelist" comment="" />
+    <list default="true" id="c34c8a77-9540-4f25-af49-f4340ce680d2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +18,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="29SYeYv2hDSIiEQK90kPC88cNA0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -31,6 +37,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\tesla" />
       <recent name="C:\Users\User\Desktop\tesla\src\images" />
       <recent name="C:\Users\User\Desktop\tesla\src\images\slider" />
       <recent name="C:\Users\User\Desktop\tesla\src" />
@@ -51,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653108049580</updated>
-      <workItem from="1653108050865" duration="10111000" />
+      <workItem from="1653108050865" duration="10489000" />
     </task>
     <servers />
   </component>
